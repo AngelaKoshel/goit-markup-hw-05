@@ -5,7 +5,7 @@
     --color-white: #ffffff;
     --bg-social-color:#4D5AE5;
     --hover-focus-color:#404bbf;
-    /* --bg-gradient:  linear-gradient(#2E2F42,#2E2F42); */
+    --time-transition-duration: 250ms;
 }
 h1,h2,h3,h4,h5,h6,p,div{
     margin: 0px;
@@ -139,7 +139,6 @@ img {
     background-position: center;
     max-width: 1440px;
     height: 600px;
-    /* padding-top: 188px; */
     padding-bottom: 188px;
     margin-left: auto;
     margin-right: auto;
@@ -171,10 +170,15 @@ img {
     letter-spacing: 0.04em;
     color: var(--color-white, #FFFFFF);
     background-color: var(--color-iris, #4d5ae5);
-    width: 169px;
+    min-width: 169px;
     height: 56px;
     padding: 0px 0px;
     border: none;
+    
+}
+.animation-btn{
+    transition-property: color, border, box-shadow, background;
+    transition-duration: var(--time-transition-duration);
 }
 .hero-btn:is(:hover, :focus) {
     background-color: var(--hover-focus-color, #404bbf);
@@ -300,6 +304,8 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition-property: background;
+    transition-duration: var(--time-transition-duration);
 }
 
 .social-network-icon {
@@ -349,11 +355,15 @@ img {
     height: 88px;
     border-radius: 4px;
     border: 1px solid #434455;
+    transition-property: border;
+    transition-duration: var(--time-transition-duration);
 }
 .customers-icon{
     width: 104px;
     height: 56px;
     fill: #8E8F99;
+    transition-property: fill;
+    transition-duration: var(--time-transition-duration);
 }
 .customers-link:is(:hover, :focus){
     border: 1px solid var(--hover-focus-color, #404bbf);
@@ -480,7 +490,8 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    
+    transition-property: background;
+    transition-duration: var(--time-transition-duration);
 }
 
 .footer-social-icons {
