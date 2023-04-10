@@ -564,7 +564,7 @@ header {
     height: 100%;
     background: rgba(46, 47, 66, 0.4);
     opacity: 1;
-    transition:  opasity 250 ms linear, visibility 250ms linear;
+    transition: opacity 250ms linear, visibility 250ms linear;
 }
 .modal{
     width: 408px;
